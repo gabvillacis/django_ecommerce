@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EELA Ecommerce - {% block title %}{% endblock %}</title>
+    <meta name="keywords" content="Tienda en línea, Ecuador">
+    <meta name="author" content="Gabriel Villacis">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+</head>
+<body>
+   <header class="main-header">
+        <div class="container">
+            <div id="brand">
+                <h1>EELA Ecommerce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Inicio</a></li>
+                    <li><a href="{% url 'catalog' %}">Productos</a></li>
+                    <li><a href="{% url 'cart' %}">Carrito</a></li>
+                    <li><a href="{% url 'contact' %}">Contacto</a></li>
+                    {% if user.is_authenticated %}
+                        <li>Bienvenido, {{ user.username }}</li>
+                        <li><button onclick="logoutUser()" class="btn btn-logout">Cerrar Sesión</button></li>
+                    {% else %}
+                        <li><a href="{% url 'signup' %}">Registrarse</a></li>
+                        <li><a href="{% url 'signin' %}">Iniciar Sesión</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+   </header> 
+   <main> 
+        <div class="container">
+            <!-- Aquí se va insertar el contenido de las plantillas hijas -->
+            {% block main_content %}
+            {% endblock %}
+        </div>     
+   </main>
+   <footer>
+        <p>&copy; 2025 EELA Ecomerce - Todos los derechos reservados</p>
+   </footer>
+   <!-- Incluir Axios desde un CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Definir variables globales para Axios -->
+    <script>
+        var ajaxSignupUrl = "{% url 'ajax_signup' %}";
+        var ajaxSigninUrl = "{% url 'ajax_signin' %}";
+        var signinUrl = "{% url 'signin' %}";
+        var homeUrl = "{% url 'home' %}";
+        var ajaxLogoutUrl = "{% url 'logout' %}"
+        var csrfToken = "{{ csrf_token }}";
+        var ajaxCheckoutUrl = "{% url 'ajax_checkout' %}";
+    </script>
+    <!-- Incluir el JavaScript de autenticación -->
+    <script src="{% static 'js/auth.js' %}"></script>
+    <!-- Incluir el JavaScript del carrito y checkout -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+{% block title %}Contáctanos{%endblock%} 
+{% block main_content %}    
+    <h2>Contáctanos</h2>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required maxlength="40">
+            </div>                    
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea rows="5" name="message" id="message" required></textarea>
+            </div>                    
+            <input type="submit" value="Enviar Mensaje" class="btn">
+            <input type="reset" value="Cancelar" class="btn btn-secondary">
+        </form>
+    </div>
+{% endblock %}

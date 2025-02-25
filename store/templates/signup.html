@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Registrarse{%endblock%} 
+{% block main_content %}
+    <h2>Registrarse</h2>
+    <div class="form-container">
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" name="first_name" id="name" required maxlength="40">
+                <div class="error" id="error-first_name"></div>
+            </div>
+            <div class="form-group">
+                <label for="name">Apellido:</label>
+                <input type="text" name="last_name" id="last_name" required maxlength="40">
+                <div class="error" id="error-last_name"></div>
+            </div>
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" name="username" id="username" required minlength="10" maxlength="20">
+                <div class="error" id="error-username"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+                <div class="error" id="error-email"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="12">
+                <div class="error" id="error-password"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirmar Contraseña:</label>
+                <input type="password" name="confirm_password" id="confirm_password" required minlength="8" maxlength="12">
+                <div class="error" id="error-confirm_password"></div>
+            </div>
+            <input type="submit" value="Registrarse" class="btn">
+            <input type="reset" value="Cancelar" class="btn btn-secondary">
+        </form>
+    </div>
+{% endblock %}

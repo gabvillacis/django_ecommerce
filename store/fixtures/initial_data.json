@@ -1,0 +1,351 @@
+[
+    {
+        "model": "store.categoria",
+        "pk": 1,
+        "fields": {
+            "nombre": "Laptops",
+            "id_url_friendly": "laptops",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.categoria",
+        "pk": 2,
+        "fields": {
+            "nombre": "Zapatos para hombre",
+            "id_url_friendly": "zapatos-para-hombre",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.categoria",
+        "pk": 3,
+        "fields": {
+            "nombre": "Productos Gamer",
+            "id_url_friendly": "productos-gamer",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.categoria",
+        "pk": 4,
+        "fields": {
+            "nombre": "Deporte",
+            "id_url_friendly": "deporte",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.categoria",
+        "pk": 5,
+        "fields": {
+            "nombre": "Automotriz",
+            "id_url_friendly": "automotriz",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.categoria",
+        "pk": 6,
+        "fields": {
+            "nombre": "Televisores",
+            "id_url_friendly": "televisores",
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z"
+        }
+    },
+
+    {
+        "model": "store.producto",
+        "pk": 1,
+        "fields": {
+            "nombre": "Tommy Hilfiger Anello",
+            "id_url_friendly": "tommy-hilfiger-anello",
+            "descripcion": "Tommy Hilfiger Anello, zapatos para hombre, negro, blanco, azul",
+            "precio": "55",
+            "imagen": "imagenes_prod/ini-tommy-anello.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [2]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 2,
+        "fields": {
+            "nombre": "Hidrolavadora Electrolux EWS31",
+            "id_url_friendly": "hidrolavadora-electrolux-ews31",
+            "descripcion": "usela para lavar su auto, pisos, paredes, fachadas y obtenga una limpieza profunda de forma rapida y eficiente, ahorrando agua. 1800 PSI, 1450 watts",
+            "precio": "151",
+            "imagen": "imagenes_prod/ini-electrolux-ews231.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [5]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 3,
+        "fields": {
+            "nombre": "Teclado Logitech G915",
+            "id_url_friendly": "teclado-logitech-g915",
+            "descripcion": "Teclado Gaming Logitech G915: Bluetooth/USB",
+            "precio": "217",
+            "imagen": "imagenes_prod/ini-logitech-g915.jpg",
+            "activo": true,
+            "destacado": true,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [3]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 4,
+        "fields": {
+            "nombre": "Bicicleta Estatica LIFE GEAR 20065",
+            "id_url_friendly": "bicicleta-estatica-life-gear-20065",
+            "descripcion": "Bicicleta Estatica LIFE GEAR 20065. Sistema magnetico con 8 niveles de resistencia. Monitor que indica tiempo, distancia, velocidad, calorias, pulso. Usuarios de hasta 242lb",
+            "precio": "299",
+            "imagen": "imagenes_prod/ini-estatica-life-gear-20065.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [4]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 5,
+        "fields": {
+            "nombre": "Gata Hidraulica Tipo Botella 4T INGCO",
+            "id_url_friendly": "gata-hidraulica-tipo-botella-4t-ingco",
+            "descripcion": "Capacidad 4 toneladas. Valvula de seguridad. Altura 194 mm hasta 372 mm",
+            "precio": "325",
+            "imagen": "imagenes_prod/ini-gata-hidraulica-4t-ingco.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [5]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 6,
+        "fields": {
+            "nombre": "Banco Pesas Weider 15963 PRO265",
+            "id_url_friendly": "banco-pesas-weider-15963-pro265",
+            "descripcion": "Banco Pesas Weider 15963 PRO265. Multiples posiciones: plano, elevado fijo, predicador, desarrollador de piernas. Incluye: 2 pesas de vinil de 40 lb con barra",
+            "precio": "359",
+            "imagen": "imagenes_prod/ini-banco-pesas-weider-15963-pro265.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [4]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 7,
+        "fields": {
+            "nombre": "Dell Inspiron 15 5515",
+            "id_url_friendly": "dell-inspiron-15-5515",
+            "descripcion": "Pantalla Tactil Full HD (1920 x 1080) de 15.6 pulgadas, AMD Ryzen 5 5500U, 8 GB DDR4 RAM, 256 GB SSD, USB-C, Wi-Fi 6, Bluetooth 4.1, AMD Radeon Graphics, Windows 11",
+            "precio": "665",
+            "imagen": "imagenes_prod/ini-dell-inspiron-5515.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [1]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 8,
+        "fields": {
+            "nombre": "Portabicicletas GET MOVING",
+            "id_url_friendly": "portabicicletas-get-moving",
+            "descripcion": "Portabicicletas GET MOVING. Capacidad para 3 bicicletas. Fabricado en acero inoxidable",
+            "precio": "679",
+            "imagen": "imagenes_prod/ini-portabicicletas-get-moving.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [5]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 9,
+        "fields": {
+            "nombre": "Smart Tv Android HYUNDAI HYLED5806A LED 58\" 4K",
+            "id_url_friendly": "smart-tv-android-hyundai-hyled5806a-led-58-4k",
+            "descripcion": "Descargue aplicaciones desde Google Play, transfiera contenido desde la pantalla de su celular o enlace dispositivos a traves de Bluetooth y disfrute de una visualizacion multimedia unica",
+            "precio": "695",
+            "imagen": "imagenes_prod/ini-hyundai-hyled5806a.jpg",
+            "activo": true,
+            "destacado": true,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [6]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 10,
+        "fields": {
+            "nombre": "Caminadora Proform Sport 4.0",
+            "id_url_friendly": "caminadora-proform-sport-4-0",
+            "descripcion": "Caminadora Proform Sport 4.0/PFTL34616. Velocidad de hasta 16 km/h. 8 programas. Inclinacion de hasta 10%. Amortiguacion. Funcion bluetooth para conectar su celular o tablet. Monitor que indica ritmo cardiaco, calorias, velocidad, tiempo, distancia. Usuarios de hasta 300 lb",
+            "precio": "15.6",
+            "imagen": "imagenes_prod/ini-caminadora-proform-sport.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [4]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 11,
+        "fields": {
+            "nombre": "Tommy Hilfiger Ramus",
+            "id_url_friendly": "tommy-hilfiger-ramus",
+            "descripcion": "Tommy Hilfiger Ramus, zapatos deportivos para hombre, blanco",
+            "precio": "39.99",
+            "imagen": "imagenes_prod/ini-tommy-ramus.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [2]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 12,
+        "fields": {
+            "nombre": "Adidas Kaptir Super",
+            "id_url_friendly": "adidas-kaptir-super",
+            "descripcion": "Adidas Kaptir Super, zapatos de correr para hombre, negro, rojo",
+            "precio": "69.96",
+            "imagen": "imagenes_prod/ini-kaptir-super.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [2]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 13,
+        "fields": {
+            "nombre": "Smart Tv ANDROID RIVIERA AND65HIK6150P LED 65\" 4K",
+            "id_url_friendly": "smart-tv-android-riviera-and65hik6150p-led-65-4k",
+            "descripcion": "Controle su televisor con comandos de voz, descargue aplicaciones desde Google Play, transfiera contenido desde la pantalla de su celular o enlace dispositivos a traves de Bluetooth y disfrute de una visualizacion multimedia unica",
+            "precio": "91.99",
+            "imagen": "imagenes_prod/ini-riviera-and65hik6150p.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [6]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 14,
+        "fields": {
+            "nombre": "Smart Tv LG 50NANO75SPA LED 50\" 4K",
+            "id_url_friendly": "smart-tv-lg-50nano75spa-led-50-4k",
+            "descripcion": "Disfrute de una experiencia audiovisual superior gracias a este LED NanoCell para potenciar al maximo los colores y aportar claridad real a cada imagen",
+            "precio": "96.19",
+            "imagen": "imagenes_prod/ini-lg-50nano75spa.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [6]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 15,
+        "fields": {
+            "nombre": "Auriculares Logitech G PRO X",
+            "id_url_friendly": "auriculares-logitech-g-pro-x",
+            "descripcion": "Auriculares inalambricos Lightspeed para juegos con tecnologia de filtro de microfono VO!CE azul, controladores PRO-G de 1.969 in y auriculares DTS: sonido envolvente X 2.0",
+            "precio": "196.69",
+            "imagen": "imagenes_prod/ini-logitech-g-pro-x.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [3]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 16,
+        "fields": {
+            "nombre": "Monitor ASUS TUF Gaming VG289Q1A",
+            "id_url_friendly": "monitor-asus-tuf-gaming-vg289q1a",
+            "descripcion": "Monitor HDR de 28 pulgadas, resolucion 4K UHD (3840 x 2160), panel IPS, Adaptive-Sync/ FreeSync, Eye Care, DisplayPort, HDMI, DCI-P3, HDR 10, Shadow Boost, color negro",
+            "precio": "263.95",
+            "imagen": "imagenes_prod/ini-asus-tuf-vg289q1a.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [3]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 17,
+        "fields": {
+            "nombre": "Lenovo Legion 5",
+            "id_url_friendly": "lenovo-legion-5",
+            "descripcion": "Pantalla FHD de 15.6 pulgadas, AMD Ryzen 7 5800H, 16 GB de RAM, 512 GB de almacenamiento, NVIDIA GeForce RTX 3050Ti",
+            "precio": "1099.99",
+            "imagen": "imagenes_prod/ini-legion5.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [1]
+        }
+    },
+    {
+        "model": "store.producto",
+        "pk": 18,
+        "fields": {
+            "nombre": "Alienware X17 R2 VR Ready Gaming Laptop",
+            "id_url_friendly": "alienware-x17-r2-vr-ready-gaming-laptop",
+            "descripcion": "Pantalla FHD de 17.3 pulgadas y 360Hz 1ms, Core i7-12700H, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3070Ti 8GB GDDR6, Bluetooth, Wi-Fi 6, USB-C, Windows 11",
+            "precio": "2673.99",
+            "imagen": "imagenes_prod/ini-alienware-x17-r2.jpg",
+            "activo": true,
+            "destacado": false,
+            "fecha_registro": "2025-02-17T00:00:00Z",
+            "fecha_ult_act": "2025-02-17T00:00:00Z",
+            "categorias": [1]
+        }
+    }
+]

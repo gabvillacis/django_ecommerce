@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% block title %}Carrito{%endblock%} 
+{% block main_content %}     
+    <h2>Carrito de Compras</h2>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="body-cart">                
+        </tbody>
+        <tfoot id="foot-cart">
+            <tr>
+                <td colspan="3">Total</td>                    
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="cart-actions">
+        <button id="btn-checkout" class="btn">Finalizar Compra</button>
+    </div>
+{% endblock %}
