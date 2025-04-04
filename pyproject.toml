@@ -1,4 +1,4 @@
-[tool.poetry]
+[project]
 name = "django-ecommerce"
 version = "0.1.0"
 description = "Ecommerce desarrollado con Django"
@@ -8,14 +8,14 @@ authors = [
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.12,<4"
-
-[tool.poetry.dependencies]
-"django (>=5.1.6,<6.0.0)",
-"pillow (>=11.1.0,<12.0.0)",
-"psycopg2-binary (>=2.9.10,<3.0.0)",
-"django-environ (>=0.12.0,<0.13.0)",
-"azure-storage-blob (>=12.24.1,<13.0.0)",
-"django-storages[azure] (>=1.14.5,<2.0.0)"
+dependencies = [
+    "django (>=5.1.6,<6.0.0)",
+    "pillow (>=11.1.0,<12.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "django-environ (>=0.12.0,<0.13.0)",
+    "azure-storage-blob (>=12.24.1,<13.0.0)",
+    "django-storages[azure] (>=1.14.5,<2.0.0)"
+]
 
 
 [build-system]
